@@ -2,98 +2,116 @@
 
 
 body, html{
-	padding:0;
-	margin:0;
-	overflow-x: hidden;
-	font-family: 'Titillium Web', sans-serif;
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
+    font-family: 'Titillium Web', sans-serif;
 
 }
 .banner-sec{
-	text-align: center;
-	color: #fff;
-	height: 500px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	margin-bottom: 50px;
+    text-align: left;
+    color: #fff;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 50px;
+}
+.banner-sec:before{
+    content:"";
+    background:rgba(0,0,0, .3);
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+.banner-sec .container{
+    max-width: 1110px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 .banner-sec h1{
-        font-family: 'Titillium Web', sans-serif;
-		position: absolute;
-		left:0;
-		right: 0;
-		top:0;
-		margin: auto;
-		bottom: 0;
-		font-size: 55px;
-		height: 118px;
-		max-width: 60%;
-		font-weight:400;
-		text-transform: uppercase;
-		letter-spacing: 1.5px;
+    font-family: 'Titillium Web', sans-serif;
+    position: absolute;
+    left:0;
+    top:0;
+    margin: auto;
+    bottom: 0;
+    font-size: 42px;
+    height: 90px;
+    max-width: 60%;
+    font-weight:400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
-
+.banner-sec h1 small{
+    font-size:22px;
+    text-transform:capitalize;
+    display:block;
+}
 footer{
-	background: #17151e;
-	padding: 40px 15px;
-	color: #fff;
+    background: #17151e;
+    padding: 40px 15px;
+    color: #fff;
     font-family: 'Titillium Web', sans-serif;
 }
 footer .footer-logo{
-	width: 204px;
-  height: 22px;
-  mix-blend-mode: undefined;
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 17px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.24;
-  letter-spacing: -0.1px;
-  text-align: left;
-  color: #ffffff;
-  vertical-align: middle;
-  margin: 0;
+    width: 204px;
+    height: 22px;
+    mix-blend-mode: undefined;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.24;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
 }
 footer .footer-logo img{
     float: left;
-	max-width: 28px;
-opacity: .8;
+    max-width: 28px;
+    opacity: .8;
 }
 footer .footer-logo span{
     float: left;
     margin: 3px 5px;
-opacity: .8;
+    opacity: .8;
 }
 footer p{
-	font-size: 13px;
+    font-size: 13px;
     display: block;
     float: left;
     margin: 20px 0;
-	font-weight: 300;
-	opacity: .8;
+    font-weight: 300;
+    opacity: .8;
     width: 100%;
 }
 footer ul{
-	list-style: none;
-	padding:0;
-	margin:0;
-	clear: both;
-	display: block;
+    list-style: none;
+    padding:0;
+    margin:0;
+    clear: both;
+    display: block;
 }
 footer ul li{
-	vertical-align: top;
-	font-weight: 300;
-	font-size: 14px;
-	margin-bottom: 7px;
+    vertical-align: top;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 7px;
 }
 footer ul li a{
-	opacity: .8;
-	color:#fff;
-	vertical-align: top;
-	font-weight: 300;
-	font-size: 14px;
-	margin-bottom: 7px;
+    opacity: .8;
+    color:#fff;
+    vertical-align: top;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 7px;
 }
 footer ul li a:visited{
     color:#fff;
@@ -103,52 +121,56 @@ footer ul li a:hover{
     opacity:1;
 }
 footer ul li i.material-icons{
-	font-size: 18px;
-	vertical-align: top;
-	margin-right:5px;
+    font-size: 18px;
+    vertical-align: top;
+    margin-right:5px;
+}
+footer ul li i.material-icons.arrow{
+    font-size:12px;
+    margin-top: 5px;
 }
 small.copyright{
-	font-size: 13px;
-	opacity: .8;
-	font-weight: 300;
-	margin-top:0px;
-	display: inline-block;
+    font-size: 13px;
+    opacity: .8;
+    font-weight: 300;
+    margin-top:0px;
+    display: inline-block;
 }
 footer .col-1{
-	width: 23%;
-	float: left;
-	padding:0 15px;
+    width: 23%;
+    float: left;
+    padding:0 15px;
 }
 footer .col-2{
-	width: 30%;
-	float: left;
-	padding:0 15px;
+    width: 30%;
+    float: left;
+    padding:0 15px;
 }
 footer .col-3{
-	width: 13%;
-	float: left;
-	padding:0 15px;
+    width: 13%;
+    float: left;
+    padding:0 15px;
 }
 footer .col-4{
-	width: 13%;
-	float: left;
-	padding:0 15px;
+    width: 13%;
+    float: left;
+    padding:0 15px;
 }
 footer .col-5{
-	width: 11%;
-	float: left;
-	padding:0 0;
+    width: 11%;
+    float: left;
+    padding:0 0;
 }
 footer .subscribe input{
-	background:#fff;
-	font-size: 13px;
-	width: 50%;
-	float: left;
-	border:0;
-	height: 35px;
-	font-weight: 300;
-	padding:0 10px;
-	color: #333; 
+    background:#fff;
+    font-size: 13px;
+    width: 50%;
+    float: left;
+    border:0;
+    height: 35px;
+    font-weight: 300;
+    padding:0 10px;
+    color: #333; 
 }
 footer .subscribe{
     position:relative;
@@ -170,81 +192,103 @@ footer .subscribe input.error + button:before:hover{
     background:#1fe8b7;
 }
 footer .subscribe button{
-	background-color: #1fe8b7;
-	border:1px solid #1fe8b7;
-	font-size: 12.5px;
-	width: 40%;
-	text-transform: uppercase;
-	color: #000;
-	font-weight: bold;
-	float: left;
-	letter-spacing: 1px;
-	color: #333;
-	font-family: 'Titillium Web', sans-serif;
-	border:0;
-	height: 35px;
-	line-height: 30px;
-	text-align: center;
-	padding:0 10px;
-	cursor: pointer;
+    background-color: #1fe8b7;
+    border:1px solid #1fe8b7;
+    font-size: 12.5px;
+    width: 40%;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    float: left;
+    letter-spacing: 1px;
+    color: #333;
+    font-family: 'Titillium Web', sans-serif;
+    border:0;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+    padding:0 10px;
+    cursor: pointer;
 
 }
 footer .subscribe button:hover{
-	background:none;
-	border:1px solid #1fe8b7;
+    background:none;
+    border:1px solid #1fe8b7;
 }
 footer .links ul li{
-	margin-bottom:7px;
+    margin-bottom:7px;
 }
 footer .links ul li a{
-	opacity:.9;
-	color: #fff;
-	font-size: 13px;
-	text-transform: uppercase;
-	text-decoration: none;
+    opacity:.9;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 footer .links ul li a:hover{
-	opacity: 1;
-	color:#5966c0;
+    opacity: 1;
+    color:#5966c0;
 }
 .clearfix2{
-	clear: both;
-	width: 100%;
+    clear: both;
+    width: 100%;
 }
 .btm-footer{
-	padding:0 15px;
+    padding:0 15px;
 }
 .btm-footer ul{
-	float: right;
-	list-style: none;
-	padding: 0;
-	margin:0;
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin:0;
 }
 .btm-footer ul li{
-	display: inline-block;
-	color: #fff;
+    display: inline-block;
+    color: #fff;
 }
 .btm-footer ul li a{
-	display: inline-block;
-	color: #fff;
-	opacity: .8;
-	margin:0 4px;
-	font-size: 15px;
+    display: inline-block;
+    color: #fff;
+    opacity: .8;
+    margin:0 4px;
+    font-size: 15px;
 }
 .btm-footer ul li a:hover{
-	opacity: 1;
-	color:#5966c0;
+    opacity: 1;
+    color:#5966c0;
 }
 .btm-footer{
-	margin-top:20px;
+    margin-top:20px;
 }
+.btn-primary.create.btn{
+    background:#5468c1;
+}
+.about.no-background .secondary dd span, .about.no-background .secondary dd{
+    font-weight:700;
+}
+.stats-section ul{
+    margin:0;
+}
+.stats-section li{
+    padding:0 20px 0 0;
+}
+.top-sub-section li{
+    padding:0 4px;
+}
+.top-section.badges-section .badge-card{
+    background-color: #fafbfb;
+    border: solid 1px #cccccc;
+}
+.top-section.badges-section .badge-card .badge-icon{
+    background:none;
+}
+
+
+
 
 
 // MAKE IT A FULL WIDTH BANNER
-.banner-box .container {
-    max-width: 70%;
-    margin: 0 auto;
-}
+
 .banner-box {
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -264,12 +308,20 @@ footer .links ul li a:hover{
 .category-list.with-topics tbody .category{
     border-width:2px;
 }
+.category-list.with-topics tbody .category .subcategories{
+    min-height:44px;
+}
 button#create-topic{
     background:none;
     text-transform:uppercase;
     border:1px solid #2a3093;
     color:#2a3093;
     padding:5px 15px;
+    font-size:15px;
+    font-weight:400;
+}
+button#create-topic .d-icon{
+    opacity:1;
 }
 button#create-topic:hover{
     background:#2a3093;
@@ -427,11 +479,13 @@ button#create-topic:hover{
 }
 .badge-card .badge-contents .badge-info h3 a{
     color:#666;
-    font-weight:400;
+    font-weight:600;
     font-size:18px;
 }
 .search-menu .menu-panel.drop-down{
     padding:15px 30px;
+    max-width: 440px !important;
+    width: 60%;
 }
 .search-menu input[type='text'] {
     margin: 0.5em 3px;
@@ -440,7 +494,7 @@ button#create-topic:hover{
     border: solid 1px #0091ea;
     height: 32px;
     outline:0;
-    border-radius:3px;
+    border-radius:4px;
 }
 .search-menu input[type='text']:focus{
     outline:none;
@@ -511,12 +565,12 @@ div.menu-links-header li a:hover, div.menu-links-header li a:hover i{
     max-width:565px;
 }
 .banner-search h5{
-  font-size: 29px;
-  letter-spacing: 0.7px;
-  text-align: left;
-  font-weight:400;
-  color: #ffffff;
-  text-transform:uppercase;
+    font-size: 29px;
+    letter-spacing: 0.7px;
+    text-align: left;
+    font-weight:400;
+    color: #ffffff;
+    text-transform:uppercase;
 }
 .banner-search .searchbox{
     background:#fff;
@@ -599,7 +653,7 @@ div.menu-links-header li a:hover, div.menu-links-header li a:hover i{
     margin-left: -4px;
 }
 .timeline-container .topic-timeline .timeline-scrollarea{
-    border-color:#e2e7ee;
+    border-left:4px solid #e2e7ee;
 }
 .timeline-replies, .timeline-ago{
     font-size:16px;
@@ -612,9 +666,6 @@ div.menu-links-header li a:hover, div.menu-links-header li a:hover i{
 }
 .replies-section li a, .topics-section li a, .links-section li a{
     font-size:16px;
-}
-#ember734{
-    display:none;
 }
 
 
