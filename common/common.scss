@@ -11,10 +11,10 @@ body, html{
 .banner-sec{
     text-align: left;
     color: #fff;
-    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-position:center;
     margin-bottom: 50px;
 }
 .banner-sec:before{
@@ -29,19 +29,18 @@ body, html{
 .banner-sec .container{
     max-width: 1110px;
     height: 100%;
+    width:80%;
     margin: 0 auto;
     position: relative;
 }
 .banner-sec h1{
     font-family: 'Titillium Web', sans-serif;
-    position: absolute;
     left:0;
     top:0;
     margin: auto;
     bottom: 0;
     font-size: 42px;
-    height: 90px;
-    max-width: 60%;
+    padding:16% 0;
     font-weight:400;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -669,6 +668,91 @@ div.menu-links-header li a:hover, div.menu-links-header li a:hover i{
 }
 
 
+
+
+// media css
+
+@media ( max-width:1200px){
+    
+}
+
+
+@media ( max-width:1024px){
+    footer .col-2{
+        width:26%;
+    }
+    footer .col-3{
+        width:10%;
+    }
+}
+
+
+@media ( max-width:768px){
+   .banner-sec h1{
+        font-size:34px;
+        font-weight:500;
+    }
+    .banner-sec h1 small{
+        font-size:20px; 
+        font-weight:400;
+    }
+    footer .col-1{
+        width:45%;
+    }
+    footer .col-2{
+        width:45%;
+    }
+    footer .col-3{
+        width:20%;
+    }
+    footer .col-4{
+        width:20%;
+    }
+    footer .col-5{
+        width:20%;
+        padding:0 15px;
+    }
+}
+
+
+@media ( max-width:640px){
+    .banner-sec h1{
+        font-size:24px;
+        font-weight:500;
+    }
+    .banner-sec h1 small{
+        font-size:16px; 
+        font-weight:400;
+    }
+    
+    footer .col-1{
+        width:100%;
+    }
+    footer .col-2{
+        width:100%;
+        margin:20px 0;
+    }
+    footer .col-3{
+        width:100%;
+    }
+    footer .col-4{
+        width:100%;
+    }
+    footer .col-5{
+        width:100%;
+        padding:0 15px;
+    }
+}
+
+
+@media ( max-width:480px){
+    
+}
+
+
+@media ( max-width:360px){
+    
+}
 
 
 
