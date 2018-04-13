@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
 body, html{
     padding:0;
@@ -52,9 +52,13 @@ body, html{
 }
 footer{
     background: #17151e;
-    padding: 40px 15px;
+    padding: 40px 0;
     color: #fff;
     font-family: 'Titillium Web', sans-serif;
+}
+footer .container{
+    max-width: 1300px;
+    margin: auto;
 }
 footer .footer-logo{
     width: 204px;
@@ -146,30 +150,31 @@ footer .col-2{
     padding:0 15px;
 }
 footer .col-3{
-    width: 13%;
+    width: 12%;
     float: left;
-    padding:0 15px;
+    padding:0 15px 0 30px;
 }
 footer .col-4{
-    width: 13%;
+    width: 12%;
     float: left;
     padding:0 15px;
 }
 footer .col-5{
-    width: 11%;
+    width: 12%;
     float: left;
     padding:0 0;
 }
 footer .subscribe input{
     background:#fff;
-    font-size: 13px;
-    width: 50%;
+    font-size: 14px;
+    width: 213px;
     float: left;
     border:0;
+    font-family: 'Roboto', sans-serif;
     height: 35px;
-    font-weight: 300;
-    padding:0 10px;
-    color: #333; 
+    font-weight: 400;
+    padding:0 20px;
+    color: rgba(0, 0, 0, 0.92); 
 }
 footer .subscribe{
     position:relative;
@@ -177,15 +182,23 @@ footer .subscribe{
 footer .subscribe input.error{
     background-color: #de1744;
     color: #fff;
-    text-indent:20px;
+    text-indent:15px;
 }
 footer .subscribe input.error + button:before{
-    content:"\f00d";
-    font-family:"fontAwesome";
-    font-size:16px;
-    left:10px;
-    position:absolute;
-    color:#fff;
+    content: "\f00d";
+    font-family: "fontAwesome";
+    font-size: 11px;
+    left: 10px;
+    width: 13px;
+    position: absolute;
+    top: 10px;
+    color: #de1744;
+    height: 15px;
+    padding-left: 2px;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 50%;
+    background: #fff;
 }
 footer .subscribe input.error + button:before:hover{
     background:#1fe8b7;
@@ -194,7 +207,7 @@ footer .subscribe button{
     background-color: #1fe8b7;
     border:1px solid #1fe8b7;
     font-size: 12.5px;
-    width: 40%;
+    width: 120px;
     text-transform: uppercase;
     color: #000;
     font-weight: bold;
@@ -249,7 +262,7 @@ footer .links ul li a:hover{
     display: inline-block;
     color: #fff;
     opacity: .8;
-    margin:0 4px;
+    margin:0 4.5px;
     font-size: 15px;
 }
 .btm-footer ul li a:hover{
@@ -305,7 +318,7 @@ footer .links ul li a:hover{
     padding-left: 10px;
 }
 .category-list.with-topics tbody .category{
-    border-width:2px;
+    border-width:3px;
 }
 .category-list.with-topics tbody .category .subcategories{
     min-height:44px;
@@ -666,6 +679,119 @@ div.menu-links-header li a:hover, div.menu-links-header li a:hover i{
 .replies-section li a, .topics-section li a, .links-section li a{
     font-size:16px;
 }
+
+
+
+
+
+li.current-user img.avatar{
+    border-radius:50%;
+}
+.category-list.with-topics .category{
+    width:auto;
+}
+img.avatar, .reply-to-tab img.avatar, .avatars img.avatar, .trigger-user-card img.avatar{
+    border-radius: 50%;
+}
+.badge-wrapper.bullet .badge-category-parent-bg+.badge-category-bg{
+    width:9px;
+}
+.badge-wrapper.bullet .badge-category-parent-bg{
+    display:none;
+}
+h3.suggested-topics-message {
+    font-weight: 400;
+    color: #666;
+    margin: 10px 0 50px;
+}
+footer.topic-list-bottom{
+    background:0;
+    padding:0;
+    color:#666;
+}
+footer.topic-list-bottom h3{
+    font-weight: 400;
+    color: #666;
+    margin: 10px 0 50px;
+}
+#list-area table thead tr th{
+    background: none;
+    color: #888;
+    text-transform:uppercase;
+    font-weight: 600;
+    padding-bottom: 3px;
+}
+#list-area .topic-list tbody tr td:first-of-type {
+    padding-left: 0; 
+}
+#list-area .topic-list>tbody>tr:first-of-type{
+    border-top: 2px solid #ccc;
+}
+.topic-list th:first-of-type, .topic-list td:first-of-type {
+    padding-left: 0;
+}
+.category-list tbody tr:first-of-type {
+    border-top: 2px solid #ccc;
+}
+.category-list td{
+    color: #676d76;
+}
+html {
+    color: #676d76;
+}
+#suggested-topics .topic-list th{
+    background:none;
+    text-transform:uppercase;
+    font-weight:600;
+    color:#777;
+    padding-bottom: 3px;
+}
+.topic-list>tbody>tr:first-of-type{
+    border-top:2px solid #ccc;
+}
+#suggested-topics .topic-list td:first-of-type{
+    padding-left:0;
+}
+.timeline-footer-controls .btn{
+    width: 28px;
+    text-align: center;
+    padding: 0;
+    height: 26px;
+    background-color: #e9e9e9;
+    display: inline-block;
+}
+.timeline-footer-controls .btn:hover{
+    background:#ccc; 
+}
+.timeline-footer-controls .btn.create i{
+    color:#aaa;
+    opacity:1;
+}
+.timeline-footer-controls .btn.create:hover i{
+    color:#888;
+    opacity:1;
+}
+.timeline-footer-controls .btn.ember-view{
+    display:block;
+}
+.timeline-footer-controls .btn.ember-view i{
+    color:#de1744;
+    opacity:1;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
