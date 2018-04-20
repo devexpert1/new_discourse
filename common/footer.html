@@ -57,3 +57,25 @@
 	</div>
 	</div>
 </footer>
+
+<script>
+$(window).scroll(function() {
+ 
+    if ($(this).scrollTop() > 120)
+         {
+         
+         if($('header').find('.extra-info-wrapper').length !== 0)
+         {
+             $('.crunchify-container').fadeOut();
+         }
+         else
+            {
+              $('.crunchify-container').fadeIn();
+             }
+      }
+   else
+            {
+              $('.crunchify-container').fadeIn();
+             }
+ });
+</script>
