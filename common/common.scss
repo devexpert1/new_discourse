@@ -15,7 +15,7 @@ body, html{
     background-size: cover;
     position: relative;
     background-position:center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .banner-sec:before{
     content:"";
@@ -307,7 +307,7 @@ footer .links ul li a:hover{
     
 }
 #main-outlet {
-    padding-top: 44px;
+    padding-top: 64px;
 }
 
 // Theme customize css
@@ -414,9 +414,7 @@ button#create-topic:hover{
 .topic-list .d-icon-thumb-tack.unpinned{
     color: #5966c0;     
 }
-#reply-control{
-    max-width: 1112px;
-}
+
 .open .grippie{
     background: #5966c0;
 }
@@ -879,10 +877,12 @@ html {
 @media ( max-width:360px){
     
 }
+ .banner-box ,footer { display:none; }
 
+.navigation-categories .banner-box ,.navigation-categories footer{ display:block; }
+.alert.alert-info { margin-top: 15px;}
 
-
-
+.d-header-icons .icon {color:#999;}
 
 
 
